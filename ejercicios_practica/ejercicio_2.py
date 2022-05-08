@@ -46,4 +46,15 @@ if __name__ == '__main__':
 
     # Crear acá su gráfico
 
+    fig = plt.figure()
+    fig.suptitle('Multiline Plot Ej 2', fontsize=30)
+    ax = fig.add_subplot()
+
+    ax.plot(x,y1, c='blue',  marker='^',  label='y1=x^2')
+    ax.plot(x, y2, c='darkred',  marker='+', label='y2=x^3')
+    ax.legend()
+    ax.grid()
+    ax.set_facecolor("lightyellow")
+    plt.show()
+
     print("terminamos")

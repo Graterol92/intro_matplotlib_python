@@ -34,4 +34,14 @@ if __name__ == '__main__':
 
     # Crear acá su gráfico
 
+    fig = plt.figure()
+    fig.suptitle('Scatter Plot Ej 3', fontsize=30)
+    ax = fig.add_subplot()
+
+    ax.scatter(x, y, c='darkblue', marker='+', label='y = tanh(x)')
+    ax.legend()
+    ax.grid()
+    ax.set_facecolor("lightyellow")
+    plt.show()    
+
     print("terminamos")
